@@ -1,0 +1,37 @@
+
+
+ALTER proc [dbo].[Payment_SelectById]
+				@Id int
+
+
+as
+
+/*
+
+Declare @Id int = 3;
+
+Execute dbo.Payment_SelectById @Id
+
+Select *
+from
+dbo.Payment
+
+*/
+
+
+BEGIN
+
+
+SELECT [Id]
+	,[UserId]
+
+  FROM [dbo].[Payment]
+
+  Where Id = @Id
+
+END
+
+
+
+
+
